@@ -18,7 +18,7 @@ curl -ks "$1" -w '%{http_code}\n' -L -o /dev/null -X POST
 echo -n "...HEAD..."
 curl -ks "$1" -w '%{http_code}\n' -L -o /dev/null  -I
 
-echo -n "...POPTIONS..."
+echo -n "...OPTIONS..."
 curl -ks "$1" -w '%{http_code}\n' -L -o /dev/null -X OPTIONS
 
 echo -n "...PUT..."
